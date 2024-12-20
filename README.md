@@ -1,2 +1,2 @@
 # tgbotrecord
-tg_bot_record
+Бот для записи клиентов. 
