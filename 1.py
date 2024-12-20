@@ -62,16 +62,16 @@ def create_confirmation_keyboard(user_id, date, slots):
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.send_message(message.chat.id, "Привет! Используй команду /record, чтобы записаться! \n\n\n\n Команда /help поможет тебе разобраться со всем!\n\n\n Контакт для связи со мной - @Surik_r")
+    bot.send_message(message.chat.id, "Привет! Используй команду /record, чтобы записаться! \n\n\n\n Команда /help поможет тебе разобраться со всем!\n\n\n Контакт для связи со мной - ")
 
 @bot.message_handler(commands=['help'])
 def send_help(message):
-    bot.send_message(message.chat.id, "Записаться на стрижку довольно легко! \n\nКоманда /record позволит тебе выбрать дату и время стрижки. \n\nВыбрал дату и время? Молодец! \n\nТеперь подожди чуть-чуть, пока администратор примет твою запись! \n\n\n\n\nИ не забудь прийти вовремя! \n\nКонтакт для связи со мной - @Surik_r")
+    bot.send_message(message.chat.id, "Записаться на стрижку довольно легко! \n\nКоманда /record позволит тебе выбрать дату и время стрижки. \n\nВыбрал дату и время? Молодец! \n\nТеперь подожди чуть-чуть, пока администратор примет твою запись! \n\n\n\n\nИ не забудь прийти вовремя! \n\nКонтакт для связи со мной - ")
 
 
 @bot.message_handler(commands=['i_am_cyborg'])
 def send_cyborg(message):
-    bot.send_message(message.chat.id, "/check_record - посмотреть чмошников нестриженных \n/add_date - добавляет новую дату.\n/add_time - добавляет новое время.\n/delete_date - удалить дату\n/delete_record - удалить запись чмошника какого-нибудь")
+    bot.send_message(message.chat.id, "/check_record - посмотреть запись нестриженных \n/add_date - добавляет новую дату.\n/add_time - добавляет новое время.\n/delete_date - удалить дату\n/delete_record - удалить запись")
 
 @bot.message_handler(commands=['record'])
 def send_date_picker(message):
